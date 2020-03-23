@@ -1,0 +1,30 @@
+.collectionContainer1{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.collectionContainer2{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.collectionItem{
+    border: solid 0.1em;
+    margin: 0.5em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
