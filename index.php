@@ -35,5 +35,19 @@
                     <li>Class:</li>
             </div>
         </div>
+        <div class=submitForms>
+            <form action="/index.php"> 
+            <label for="brand">Brand:</label><br>
+            <input type="text" name="brand">
+            <label for="name">Name:</label><br>
+            <input type="text" name="name"><br>
+            <label for="price">Price:</label><br>
+            <input type="text" name="price"><br>
+            <label for="type">Type:</label><br>
+            <input type="radio" name="type"><br>
+            <label for="picture">Picture:</label><br>
+            <input type="text" name="picture"><br>
+        </div>
+</form> 
     </body>
 </html>
