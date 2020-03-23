@@ -1,0 +1,63 @@
+body {
+    font-family: 'Baloo 2', cursive;
+	margin: 5em;
+}
+
+.collectionContainer{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.collectionItem{
+    border: solid 0.1em;
+    margin: 0.5em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-bottom: 0.5em;
+    width: 33%;
+}
+
+h2 {
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+input {
+    width: 100%;
+    padding: 1em;
+    height: 2.5em;
+}
+
+input:focus {
+    border: 3px solid #555;
+}
+
+select {
+    width: 100%;
+    height: 2.5em;
+}
+
+.submitButton {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 770px) {
+    .collectionContainer{
+        flex-direction: column;
+    }
+
+    .collectionItem{
+        width: 100%;
+    }
+}
