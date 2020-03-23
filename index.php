@@ -9,7 +9,7 @@
         <div class="collectionContainer1">
             <div class="collectionItem">
                 <h2>Collection Item 1</h2>
-                <img></img>
+                <img src="https://dbyvw4eroffpi.cloudfront.net/product-media/2L9M/1000/1000/Cannondale-SystemSix-Carbon-Ultegra-Di2-Disc-Road-Bike-2020.jpg"></img>
                 <ul class="informationList"></ul>
                     <li>Name:</li>
                     <li>Brand:</li>
@@ -18,7 +18,7 @@
             </div>
             <div class="collectionItem">
                 <h2>Collection Item 2</h2>
-                <img></img>
+                <img src="https://dbyvw4eroffpi.cloudfront.net/product-media/2L9M/1000/1000/Cannondale-SystemSix-Carbon-Ultegra-Di2-Disc-Road-Bike-2020.jpg"></img>
                 <ul class="informationList"></ul>
                     <li>Name:</li>
                     <li>Brand:</li>
@@ -27,7 +27,7 @@
             </div>
             <div class="collectionItem">
                 <h2>Collection Item 3</h2>
-                <img></img>
+                <img src="https://dbyvw4eroffpi.cloudfront.net/product-media/2L9M/1000/1000/Cannondale-SystemSix-Carbon-Ultegra-Di2-Disc-Road-Bike-2020.jpg"></img>
                 <ul class="informationList"></ul>
                     <li>Name:</li>
                     <li>Brand:</li>
@@ -46,10 +46,11 @@
                 <input type="text" name="price"><br><br>
                 <label for="type">Type:</label><br>
                 <input type="radio" name="type" value="Endurance">
-                <label for="type"></label><br>
+                <label for="type">Endurance</label><br>
                 <input type="radio" name="type" value="Aero">
-                <label for="type"></label><br>
-                <input type="radio" name="type" value="Climbing"><br><br>
+                <label for="type">Aero</label><br>
+                <input type="radio" name="type" value="Climbing">
+                <label for="type">Climbing</label><br><br>
                 <label for="picture">Picture:</label><br>
                 <input type="text" name="picture"><br><br>
                 <input type="submit" value="Submit">
