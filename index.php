@@ -80,12 +80,11 @@
                 <label for="price">Price:</label><br>
                 <input type="text" name="price"><br><br>
                 <label for="type">Type:</label><br>
-                <input type="radio" name="type" value="Endurance">
-                <label for="type">Endurance</label><br>
-                <input type="radio" name="type" value="Aero">
-                <label for="type">Aero</label><br>
-                <input type="radio" name="type" value="Climbing">
-                <label for="type">Climbing</label><br><br>
+                <select name="type">
+                    <option value="aero">Aero</option>
+                    <option value="climbing">Climbing</option>
+                    <option value="endurance">Endurance</option>
+                </select><br><br>
                 <label for="picture">Picture:</label><br>
                 <input type="text" name="picture"><br><br>
                 <input type="submit" value="Submit">
