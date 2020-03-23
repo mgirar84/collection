@@ -50,7 +50,7 @@
                 <input type="radio" name="type" value="Aero">
                 <label for="type"></label><br>
                 <input type="radio" name="type" value="Climbing"><br><br>
-                <label for="picture">Picture:</label><br><br>
+                <label for="picture">Picture:</label><br>
                 <input type="text" name="picture"><br><br>
                 <input type="submit" value="Submit">
             </form>
