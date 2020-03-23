@@ -37,17 +37,21 @@
         </div>
         <div class=submitForms>
             <form action="/index.php"> 
-            <label for="brand">Brand:</label><br>
-            <input type="text" name="brand">
-            <label for="name">Name:</label><br>
-            <input type="text" name="name"><br>
-            <label for="price">Price:</label><br>
-            <input type="text" name="price"><br>
-            <label for="type">Type:</label><br>
-            <input type="radio" name="type"><br>
-            <label for="picture">Picture:</label><br>
-            <input type="text" name="picture"><br>
+                <label for="brand">Brand:</label><br>
+                <input type="text" name="brand">
+                <label for="name">Name:</label><br>
+                <input type="text" name="name"><br>
+                <label for="price">Price:</label><br>
+                <input type="text" name="price"><br>
+                <label for="type">Type:</label><br>
+                <input type="radio" name="type" value="Endurance"><br>
+                <label for="type"></label><br>
+                <input type="radio" name="type" value="Aero"><br>
+                <label for="type"></label><br>
+                <input type="radio" name="type" value="Climbing"><br>
+                <label for="picture">Picture:</label><br>
+                <input type="text" name="picture"><br>
+            </form>
         </div>
-</form> 
     </body>
 </html>
