@@ -1,3 +1,10 @@
+body {
+    font-family: 'Baloo 2', cursive;
+	margin: 5em;
+}
+
+
+
 .collectionContainer1{
     display: flex;
     flex-wrap: nowrap;
@@ -18,6 +25,10 @@
     padding-bottom: 0.5em;
 }
 
+h2 {
+    text-align: center;
+}
+
 img {
     max-width: 100%;
     height: auto;
@@ -35,8 +46,15 @@ ul {
     height: 2.5em;
   }
 
+  input:focus {
+    border: 3px solid #555;
+  }
+
   select {
     width: 100%;
-    padding: 1em;
     height: 2.5em;
+  }
+
+  .submitButton {
+    cursor: pointer;
   }

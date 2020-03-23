@@ -1,6 +1,7 @@
 <html lang='en'>
     <head>
         <link rel="stylesheet" href="css.css">
+        <link href="https://fonts.googleapis.com/css?family=Baloo+2&display=swap" rel="stylesheet">
         <title>Road Bike Collection</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
@@ -87,7 +88,7 @@
                 </select><br><br>
                 <label for="picture">Picture:</label><br>
                 <input type="text" name="picture"><br><br>
-                <input type="submit" value="Submit">
+                <input class="submitButton" type="submit" value="Submit">
             </form>
         </div>
     </body>
