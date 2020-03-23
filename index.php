@@ -1,6 +1,6 @@
 <html lang='en'>
     <head>
-        <link rel="stylesheet" href="css_stylesheet.css">
+        <link rel="stylesheet" href="css.css">
         <title>Road Bike Collection</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
