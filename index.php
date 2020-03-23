@@ -36,7 +36,7 @@
             </div>
         </div>
         <div class=submitForms>
-            <form action="/index.php"> 
+            <form action="/index.php" method="post"> 
                 <label for="brand">Brand:</label><br>
                 <input type="text" name="brand">
                 <label for="name">Name:</label><br>
@@ -51,6 +51,7 @@
                 <input type="radio" name="type" value="Climbing"><br>
                 <label for="picture">Picture:</label><br>
                 <input type="text" name="picture"><br>
+                <input type="submit" value="Submit">
             </form>
         </div>
     </body>
