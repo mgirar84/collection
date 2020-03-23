@@ -9,59 +9,65 @@
         <div class="collectionContainer1">
             <div class="collectionItem">
                 <h2>Collection Item 1</h2>
-                <img class=collectionImage src="https://dbyvw4eroffpi.cloudfront.net/product-media/2L9M/1000/1000/Cannondale-SystemSix-Carbon-Ultegra-Di2-Disc-Road-Bike-2020.jpg"></img>
-                <ul class="informationList"></ul>
+                <img class="collectionImage" src="https://dbyvw4eroffpi.cloudfront.net/product-media/2L9M/1000/1000/Cannondale-SystemSix-Carbon-Ultegra-Di2-Disc-Road-Bike-2020.jpg"></img>
+                <ul class="informationList">
                     <li>Name:</li>
                     <li>Brand:</li>
                     <li>Price:</li>
                     <li>Class:</li>
+                </ul>
             </div>
             <div class="collectionItem">
                 <h2>Collection Item 2</h2>
-                <img class=collectionImage src="https://dbyvw4eroffpi.cloudfront.net/product-media/2L9M/1000/1000/Cannondale-SystemSix-Carbon-Ultegra-Di2-Disc-Road-Bike-2020.jpg"></img>
-                <ul class="informationList"></ul>
+                <img class="collectionImage" src="https://dbyvw4eroffpi.cloudfront.net/product-media/2L9M/1000/1000/Cannondale-SystemSix-Carbon-Ultegra-Di2-Disc-Road-Bike-2020.jpg"></img>
+                <ul class="informationList">
                     <li>Name:</li>
                     <li>Brand:</li>
                     <li>Price:</li>
                     <li>Class:</li>
+                </ul>
             </div>
             <div class="collectionItem">
                 <h2>Collection Item 3</h2>
-                <img class=collectionImage src="https://dbyvw4eroffpi.cloudfront.net/product-media/2L9M/1000/1000/Cannondale-SystemSix-Carbon-Ultegra-Di2-Disc-Road-Bike-2020.jpg"></img>
-                <ul class="informationList"></ul>
+                <img class="collectionImage" src="https://dbyvw4eroffpi.cloudfront.net/product-media/2L9M/1000/1000/Cannondale-SystemSix-Carbon-Ultegra-Di2-Disc-Road-Bike-2020.jpg"></img>
+                <ul class="informationList">
                     <li>Name:</li>
                     <li>Brand:</li>
                     <li>Price:</li>
                     <li>Class:</li>
+                </ul>
             </div>
         </div>
         <div class="collectionContainer2">
             <div class="collectionItem">
                 <h2>Collection Item 4</h2>
-                <img class=collectionImage src="https://dbyvw4eroffpi.cloudfront.net/product-media/2L9M/1000/1000/Cannondale-SystemSix-Carbon-Ultegra-Di2-Disc-Road-Bike-2020.jpg"></img>
-                <ul class="informationList"></ul>
+                <img class="collectionImage" src="https://dbyvw4eroffpi.cloudfront.net/product-media/2L9M/1000/1000/Cannondale-SystemSix-Carbon-Ultegra-Di2-Disc-Road-Bike-2020.jpg"></img>
+                <ul class="informationList">
                     <li>Name:</li>
                     <li>Brand:</li>
                     <li>Price:</li>
                     <li>Class:</li>
+                </ul>
             </div>
             <div class="collectionItem">
                 <h2>Collection Item 5</h2>
-                <img class=collectionImage src="https://dbyvw4eroffpi.cloudfront.net/product-media/2L9M/1000/1000/Cannondale-SystemSix-Carbon-Ultegra-Di2-Disc-Road-Bike-2020.jpg"></img>
-                <ul class="informationList"></ul>
+                <img class="collectionImage" src="https://dbyvw4eroffpi.cloudfront.net/product-media/2L9M/1000/1000/Cannondale-SystemSix-Carbon-Ultegra-Di2-Disc-Road-Bike-2020.jpg"></img>
+                <ul class="informationList">
                     <li>Name:</li>
                     <li>Brand:</li>
                     <li>Price:</li>
                     <li>Class:</li>
+                </ul>
             </div>
             <div class="collectionItem">
                 <h2>Collection Item 6</h2>
-                <img class=collectionImage src="https://dbyvw4eroffpi.cloudfront.net/product-media/2L9M/1000/1000/Cannondale-SystemSix-Carbon-Ultegra-Di2-Disc-Road-Bike-2020.jpg"></img>
-                <ul class="informationList"></ul>
+                <img class="collectionImage" src="https://dbyvw4eroffpi.cloudfront.net/product-media/2L9M/1000/1000/Cannondale-SystemSix-Carbon-Ultegra-Di2-Disc-Road-Bike-2020.jpg"></img>
+                <ul class="informationList">
                     <li>Name:</li>
                     <li>Brand:</li>
                     <li>Price:</li>
                     <li>Class:</li>
+                </ul>
             </div>
         </div>
         <br>
