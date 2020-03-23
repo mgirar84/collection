@@ -3,13 +3,7 @@ body {
 	margin: 5em;
 }
 
-.collectionContainer1{
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-}
-
-.collectionContainer2{
+.collectionContainer{
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
@@ -21,6 +15,7 @@ body {
     padding-left: 0.5em;
     padding-right: 0.5em;
     padding-bottom: 0.5em;
+    width: 33%;
 }
 
 h2 {
@@ -58,11 +53,11 @@ select {
 }
 
 @media screen and (max-width: 770px) {
-    .collectionContainer1{
+    .collectionContainer{
         flex-direction: column;
     }
-    
-    .collectionContainer2{
-        flex-direction: column;
+
+    .collectionItem{
+        width: 100%;
     }
 }
