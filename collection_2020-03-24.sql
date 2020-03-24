@@ -27,11 +27,11 @@ DROP TABLE IF EXISTS `roadbikes`;
 
 CREATE TABLE `roadbikes` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
-  `model` varchar(11) DEFAULT NULL,
+  `model` varchar(20) DEFAULT NULL,
   `brand` varchar(11) DEFAULT NULL,
   `price` int(11) DEFAULT NULL,
   `type` varchar(11) DEFAULT NULL,
-  `picture` varchar(11) DEFAULT NULL,
+  `picture` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
