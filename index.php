@@ -17,8 +17,8 @@
             <form action="/index.php" method="post"> 
                 <label for="brand">Brand:</label><br>
                 <input type="text" name="brand"><br><br>
-                <label for="name">Name:</label><br>
-                <input type="text" name="name"><br><br>
+                <label for="model">Model:</label><br>
+                <input type="text" name="model"><br><br>
                 <label for="price">Price:</label><br>
                 <input type="text" name="price"><br><br>
                 <label for="type">Type:</label><br>
