@@ -1,7 +1,19 @@
 <?php
+
+$dbName = 'mysql:host=db; dbname=collection';
+$myUsername = 'root';
+$myPassword = 'password';
+$pdoFetchMode = PDO::ATTR_DEFAULT_FETCH_MODE;
+$pdoFetchType = PDO::FETCH_ASSOC;
+
 //connect
-$db = new PDO('mysql:host=db; dbname=collection', 'root', 'password');
-$db->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
+function connectDB ($dbName, $username, $password, $fetchMode, $fetchType) {
+    $db = new PDO($dbName, $username, $password);
+    $db->setAttribute($fetchMode, $fetchType);
+    return $db;
+}
+
+$db = connectDB ($dbName, $myUsername, $myPassword, $pdoFetchMode, $pdoFetchType);
 
 //select
 $query = $db->prepare('SELECT `model`, `brand`, `price`, `type`, `picture` FROM `roadbikes`;');
