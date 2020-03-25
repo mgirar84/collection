@@ -28,12 +28,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         //check if price is a whole number
         if (preg_match('/^[1-9][0-9]{0,15}$/', $price)) {
-            $websiteErr = "Must be a whole number";
+            $priceErr = "Must be a whole number";
         }
       }
   
-    if (empty($_POST["price"])) {
-        $priceErr = "Price is required";
+    if (empty($_POST["picture"])) {
+        $pictureErr = "URL is required";
    } else {
         $picture = test_input($_POST["picture"]);
 
