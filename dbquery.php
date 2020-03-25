@@ -13,6 +13,7 @@ function connectDB ($dbName, $username, $password, $fetchMode, $fetchType) {
     return $db;
 }
 
+//return is stored left
 $db = connectDB ($dbName, $myUsername, $myPassword, $pdoFetchMode, $pdoFetchType);
 
 //select
