@@ -6,7 +6,7 @@ $brand = $model = $type = $price = $picture = "";
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (empty($_POST["brand"])) {
         $brandErr = "Brand is required";
-      } else {
+    } else {
         $brand = test_input($_POST["brand"]);
         
         // check if name only contains letters and whitespace
@@ -17,13 +17,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       
     if (empty($_POST["model"])) {
         $modelErr = "Model is required";
-      } else {
+    } else {
         $model = test_input($_POST["model"]);
       }
 
     if (empty($_POST["price"])) {
         $priceErr = "Price is required";
-      } else {
+    } else {
         $price = test_input($_POST["price"]);
 
         //check if price is a whole number
@@ -31,13 +31,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $websiteErr = "Must be a whole number";
         }
       }
+  
+    if (empty($_POST["price"])) {
+        $priceErr = "Price is required";
+   } else {
+        $picture = test_input($_POST["picture"]);
 
-  $type = test_input($_POST["type"]);
-  $picture = test_input($_POST["picture"]);
-  // check if URL address syntax is valid (this regular expression also allows dashes in the URL)
-  if (!preg_match("/\b(?:(?:https?|ftp):\/\/|www\.)[-a-z0-9+&@#\/%?=~_|!:,.;]*[-a-z0-9+&@#\/%=~_|]/i",$picture)) {
-    $pictureErr = "Invalid URL"; 
-  }
+        // check if URL address syntax is valid (also allows dashes in the URL)
+        if (!preg_match("/\b(?:(?:https?|ftp):\/\/|www\.)[-a-z0-9+&@#\/%?=~_|!:,.;]*[-a-z0-9+&@#\/%=~_|]/i",$picture)) {
+            $pictureErr = "Invalid URL"; 
+        }
+   }
+    
+    $type = test_input($_POST["type"]);
 }
 
 function test_input($data) {
@@ -46,4 +52,5 @@ function test_input($data) {
   $data = htmlspecialchars($data);
   return $data;
 }
+
 ?>
