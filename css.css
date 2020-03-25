@@ -1,6 +1,9 @@
-body {
+html {
     font-family: 'Baloo 2', cursive;
-	margin: 5em;
+}
+
+body {
+    margin: 5em;
 }
 
 .collectionContainer{
@@ -18,8 +21,11 @@ body {
     width: 33%;
 }
 
+/* height is to prevent text forcing images down on resize */
 h2 {
     text-align: center;
+    font-size: 1.5em;
+    height: 114px;
 }
 
 img {
