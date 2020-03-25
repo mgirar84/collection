@@ -58,6 +58,10 @@ select {
     cursor: pointer;
 }
 
+.error {
+    color: #FF0000;
+}
+
 @media screen and (max-width: 770px) {
     .collectionContainer{
         flex-direction: column;
