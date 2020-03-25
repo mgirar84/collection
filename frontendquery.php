@@ -12,8 +12,6 @@ function displayBike (Array $bikes) {
     }
 }
 
-
-
 // Handles a single bike
 function createItem (String $brand, String $model, Int $price, String $type, String $picture) {
         echo '<div class="collectionItem">'
@@ -27,11 +25,5 @@ function createItem (String $brand, String $model, Int $price, String $type, Str
             . '</ul>'
         . '</div>';
 }
-
-
-
-
-
-
 
 ?>
