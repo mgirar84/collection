@@ -20,7 +20,7 @@ function createItem (String $brand, String $model, Int $price, String $type, Str
             echo '<h2>' . $brand . ' ' . $model . '</h2>';
             echo '<img class="collectionImage" src="' . $picture . '"></img>';
             echo '<ul class="informationList">';
-                echo '<li>Name: ' . $model . '</li>';
+                echo '<li>Model: ' . $model . '</li>';
                 echo '<li>Brand: ' . $brand . '</li>';
                 echo '<li>Price: £' . $price . '</li>';
                 echo '<li>Class: ' . $type . '</li>';
