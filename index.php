@@ -19,13 +19,13 @@
             <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post"> 
                 <label for="brand">Brand:</label>
                 <span class="error">* <?php echo $brandErr;?></span><br>
-                <input type="text" name="brand"><br><br>
+                <input type="text" name="brand" value="<?php echo $brand;?>"><br><br>
                 <label for="model">Model:</label>
                 <span class="error">* <?php echo $modelErr;?></span><br>
-                <input type="text" name="model"><br><br>
+                <input type="text" name="model" value="<?php echo $model;?>"><br><br>
                 <label for="price">Price:</label>
                 <span class="error">* <?php echo $priceErr;?></span><br>
-                <input type="text" name="price"><br><br>
+                <input type="text" name="price" value="<?php echo $price;?>"><br><br>
                 <label for="type">Type:</label><br>
                 <select name="type">
                     <option value="aero">Aero</option>
