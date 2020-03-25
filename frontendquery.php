@@ -16,16 +16,16 @@ function displayBike (Array $bikes) {
 
 // Handles a single bike
 function createItem (String $brand, String $model, Int $price, String $type, String $picture) {
-        echo '<div class="collectionItem">';
-            echo '<h2>' . $brand . ' ' . $model . '</h2>';
-            echo '<img class="collectionImage" src="' . $picture . '"></img>';
-            echo '<ul class="informationList">';
-                echo '<li>Model: ' . $model . '</li>';
-                echo '<li>Brand: ' . $brand . '</li>';
-                echo '<li>Price: £' . $price . '</li>';
-                echo '<li>Class: ' . $type . '</li>';
-            echo '</ul>';
-        echo '</div>';
+        echo '<div class="collectionItem">'
+            . '<h2>' . $brand . ' ' . $model . '</h2>'
+            . '<img class="collectionImage" src="' . $picture . '"></img>'
+            . '<ul class="informationList">'
+                . '<li>Model: ' . $model . '</li>'
+                . '<li>Brand: ' . $brand . '</li>'
+                . '<li>Price: £' . $price . '</li>'
+                . '<li>Class: ' . $type . '</li>'
+            . '</ul>'
+        . '</div>';
 }
 
 

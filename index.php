@@ -1,7 +1,7 @@
+<?php include 'dbquery.php';?>
+<?php include 'frontendquery.php';?>
 <html lang='en'>
     <head>
-        <?php include 'dbquery.php';?>
-        <?php include 'frontendquery.php';?>
         <link rel="stylesheet" href="css.css">
         <link href="https://fonts.googleapis.com/css?family=Baloo+2&display=swap" rel="stylesheet">
         <title>Road Bike Collection</title>
