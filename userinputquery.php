@@ -1,7 +1,15 @@
 <?php
 // define variables and set to empty values
-$brandErr = $modelErr = $priceErr = $pictureErr = "";
-$brand = $model = $type = $price = $picture = "";
+$brandErr = "";
+$modelErr = "";
+$priceErr = "";
+$pictureErr = "";
+
+$brand = "";
+$model = "";
+$type = "";
+$price = "";
+$picture = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (empty($_POST["brand"])) {

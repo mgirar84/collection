@@ -16,7 +16,7 @@ function displayBike (Array $bikes) {
 function createItem (String $brand, String $model, Int $price, String $type, String $picture) {
         echo '<div class="collectionItem">'
             . '<h2>' . $brand . ' ' . $model . '</h2>'
-            . '<img class="collectionImage" src="' . $picture . '"alt="'. $brand . ' ' . $model . '></img>'
+            . '<img class="collectionImage" src="' . $picture . '"alt="'. $brand . ' ' . $model . '>'
             . '<ul class="informationList">'
                 . '<li>Model: ' . $model . '</li>'
                 . '<li>Brand: ' . $brand . '</li>'
