@@ -22,4 +22,5 @@ $query = $db->prepare('SELECT `model`, `brand`, `price`, `type`, `picture` FROM 
 //execute
 $query->execute();
 $bikes = $query->fetchAll();
+
 ?>
