@@ -17,11 +17,6 @@
         <div class=submitForms>
             <p><span class="error">* required field</span></p>
             <form method="post"> 
-
-                <label for="test">Test Input
-                    <input name="test" id="test" type="text">
-                </label>
-
                 <label for="brand">Brand:</label>
                 <span class="error">* <?php echo $brandErr;?></span><br>
                     <input type="text" name="brand" id="brand" value="<?php echo $brand;?>" required><br><br>
@@ -31,8 +26,9 @@
                 <label for="price">Price:</label>
                 <span class="error">* <?php echo $priceErr;?></span><br>
                     <input type="text" name="price" id="price" value="<?php echo $price;?>" required><br><br>
-                <label for="type">Type:</label><br>
+                <label for="type">Type:</label><span class="error">* <?php echo $typeErr;?></span><br>
                 <select name="type">
+                    <option value="">Select...</option>
                     <option value="Aero">Aero</option>
                     <option value="Climbing">Climbing</option>
                     <option value="Endurance">Endurance</option>

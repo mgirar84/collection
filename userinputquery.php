@@ -1,7 +1,14 @@
 <?php
+//function to sanitise user input data
+require 'sanitisefunction.php';
+
+//function to check if user input matches only items in dropdown
+require 'userinputfunction.php';
+
 // define variables and set to empty values
 $brandErr = "";
 $modelErr = "";
+$typeErr = "";
 $priceErr = "";
 $pictureErr = "";
 
@@ -50,25 +57,27 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $pictureErr = "Invalid URL"; 
         }
     }
-    
-    $type = test_input($_POST["type"]);
+
+    if(empty($_POST["type"])) {
+        $typeErr = "You forgot to select a Type!";
+    } else {
+
+        if(correctType()) {
+            $type = test_input($_POST["type"]);
+        }
+
+        //connect
+        $db = connectDB ($dbName, $myUsername, $myPassword, $pdoFetchMode, $pdoFetchType);
+
+        //select
+        $query = $db->prepare("INSERT INTO `roadbikes` (`model`, `brand`, `type`, `price`, `picture`) VALUES(?, ?, ?, ?, ?);");
+
+        //execute
+        $query->setFetchMode(PDO::FETCH_ASSOC);
+        $query->execute([$model, $brand, $type, $price, $picture]);
+    }
 }
 
-//function to sanitise user input data
-function test_input($data) {
-  $data = trim($data);
-  $data = stripslashes($data);
-  $data = htmlspecialchars($data);
-  return $data;
-}
 
-$db = connectDB ($dbName, $myUsername, $myPassword, $pdoFetchMode, $pdoFetchType);
-
-//select
-$query = $db->prepare("INSERT INTO `roadbikes` (`model`, `brand`, `type`, `price`, `picture`) VALUES(?, ?, ?, ?, ?);");
-
-//execute
-$query->setFetchMode(PDO::FETCH_ASSOC);
-$query->execute([$model, $brand, $type, $price, $picture]);
 
 ?>
