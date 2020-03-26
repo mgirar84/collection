@@ -13,13 +13,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if (!preg_match("/^[a-zA-Z ]*$/",$brand)) {
             $brandErr = "Only letters and white space allowed";
         }
-      }
+    }
       
     if (empty($_POST["model"])) {
         $modelErr = "Model is required";
     } else {
         $model = test_input($_POST["model"]);
-      }
+    }
 
     if (empty($_POST["price"])) {
         $priceErr = "Price is required";
@@ -30,7 +30,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if (preg_match('/^[1-9][0-9]{0,15}$/', $price)) {
             $priceErr = "Must be a whole number";
         }
-      }
+    }
   
     if (empty($_POST["picture"])) {
         $pictureErr = "URL is required";
@@ -41,7 +41,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if (!preg_match("/\b(?:(?:https?|ftp):\/\/|www\.)[-a-z0-9+&@#\/%?=~_|!:,.;]*[-a-z0-9+&@#\/%=~_|]/i",$picture)) {
             $pictureErr = "Invalid URL"; 
         }
-   }
+    }
     
     $type = test_input($_POST["type"]);
 }
