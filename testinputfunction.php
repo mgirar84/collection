@@ -27,7 +27,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $price = test_input($_POST["price"]);
 
         //check if price is a whole number
-        if (preg_match('/^[1-9][0-9]{0,15}$/', $price)) {
+        if (preg_match('/^[1-100000][0-100000]{0,15}$/', $price)) {
             $priceErr = "Must be a whole number";
         }
     }
@@ -52,5 +52,14 @@ function test_input($data) {
   $data = htmlspecialchars($data);
   return $data;
 }
+
+$db = connectDB ($dbName, $myUsername, $myPassword, $pdoFetchMode, $pdoFetchType);
+
+//select
+$query = $db->prepare("INSERT INTO `roadbikes` (`model`, `brand`, `type`, `price`, `picture`) VALUES(?, ?, ?, ?, ?);");
+
+//execute
+$query->setFetchMode(PDO::FETCH_ASSOC);
+$query->execute([$model, $brand, $type, $price, $picture]);
 
 ?>
