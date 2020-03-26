@@ -46,6 +46,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $type = test_input($_POST["type"]);
 }
 
+//function to sanitise user input data
 function test_input($data) {
   $data = trim($data);
   $data = stripslashes($data);
