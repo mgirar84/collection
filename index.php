@@ -28,9 +28,9 @@
                 <input type="text" name="price" value="<?php echo $price;?>"><br><br>
                 <label for="type">Type:</label><br>
                 <select name="type">
-                    <option value="aero">Aero</option>
-                    <option value="climbing">Climbing</option>
-                    <option value="endurance">Endurance</option>
+                    <option value="Aero">Aero</option>
+                    <option value="Climbing">Climbing</option>
+                    <option value="Endurance">Endurance</option>
                 </select><br><br>
                 <label for="picture">Picture:</label>
                 <span class="error">* <?php echo $pictureErr;?></span><br>
