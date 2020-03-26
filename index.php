@@ -36,7 +36,7 @@
                 <span class="error">* <?php echo $pictureErr;?></span><br>
                 <input type="text" name="picture">
                 <br><br>
-                <input class="submitButton" type="submit" value="submit">
+                <input class="submitButton" type="submit" value="Submit">
             </form>
         </div>
     </body>
