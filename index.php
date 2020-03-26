@@ -1,5 +1,6 @@
 <?php include 'dbquery.php';?>
 <?php include 'frontendquery.php';?>
+<?php include 'userinputquery.php';?>
 <html lang='en'>
     <head>
         <link rel="stylesheet" href="css.css">
@@ -14,21 +15,28 @@
         </div>
         <br>
         <div class=submitForms>
-            <form action="/index.php" method="post"> 
-                <label for="brand">Brand:</label><br>
-                <input type="text" name="brand"><br><br>
-                <label for="model">Model:</label><br>
-                <input type="text" name="model"><br><br>
-                <label for="price">Price:</label><br>
-                <input type="text" name="price"><br><br>
-                <label for="type">Type:</label><br>
+            <p><span class="error">* required field</span></p>
+            <form method="post"> 
+                <label for="brand">Brand:</label>
+                <span class="error">* <?php echo $brandErr;?></span><br>
+                    <input type="text" name="brand" id="brand" value="<?php echo $brand;?>" required><br><br>
+                <label for="model">Model:</label>
+                <span class="error">* <?php echo $modelErr;?></span><br>
+                    <input type="text" name="model" id="model" value="<?php echo $model;?>" required><br><br>
+                <label for="price">Price:</label>
+                <span class="error">* <?php echo $priceErr;?></span><br>
+                    <input type="text" name="price" id="price" value="<?php echo $price;?>" required><br><br>
+                <label for="type">Type:</label><span class="error">* <?php echo $typeErr;?></span><br>
                 <select name="type">
-                    <option value="aero">Aero</option>
-                    <option value="climbing">Climbing</option>
-                    <option value="endurance">Endurance</option>
+                    <option value="">Select...</option>
+                    <option value="Aero">Aero</option>
+                    <option value="Climbing">Climbing</option>
+                    <option value="Endurance">Endurance</option>
                 </select><br><br>
-                <label for="picture">Picture:</label><br>
-                <input type="text" name="picture"><br><br>
+                <label for="picture">Picture:</label>
+                <span class="error">* <?php echo $pictureErr;?></span><br>
+                    <input type="text" name="picture" id="picture" required>
+                <br><br>
                 <input class="submitButton" type="submit" value="Submit">
             </form>
         </div>
