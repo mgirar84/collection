@@ -16,16 +16,21 @@
         <br>
         <div class=submitForms>
             <p><span class="error">* required field</span></p>
-            <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post"> 
+            <form method="post"> 
+
+                <label for="test">Test Input
+                    <input name="test" id="test" type="text">
+                </label>
+
                 <label for="brand">Brand:</label>
                 <span class="error">* <?php echo $brandErr;?></span><br>
-                <input type="text" name="brand" value="<?php echo $brand;?>" required><br><br>
+                    <input type="text" name="brand" id="brand" value="<?php echo $brand;?>" required><br><br>
                 <label for="model">Model:</label>
                 <span class="error">* <?php echo $modelErr;?></span><br>
-                <input type="text" name="model" value="<?php echo $model;?>" required><br><br>
+                    <input type="text" name="model" id="model" value="<?php echo $model;?>" required><br><br>
                 <label for="price">Price:</label>
                 <span class="error">* <?php echo $priceErr;?></span><br>
-                <input type="text" name="price" value="<?php echo $price;?>" required><br><br>
+                    <input type="text" name="price" id="price" value="<?php echo $price;?>" required><br><br>
                 <label for="type">Type:</label><br>
                 <select name="type">
                     <option value="Aero">Aero</option>
@@ -34,7 +39,7 @@
                 </select><br><br>
                 <label for="picture">Picture:</label>
                 <span class="error">* <?php echo $pictureErr;?></span><br>
-                <input type="text" name="picture" required>
+                    <input type="text" name="picture" id="picture" required>
                 <br><br>
                 <input class="submitButton" type="submit" value="Submit">
             </form>
